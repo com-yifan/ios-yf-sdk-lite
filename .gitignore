@@ -1,0 +1,26 @@
+# Public distribution repository: allow only binary SDK release files.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/YFLTAdsSDK.podspec
+!/release/
+/release/*
+!/release/YFAdsSDK/
+/release/YFAdsSDK/*
+!/release/YFAdsSDK/YFAdsSDK.xcframework/
+
+# Never publish implementation sources, private headers, or build/debug outputs.
+**/PrivateHeaders/
+**/.DS_Store
+*.m
+*.mm
+*.c
+*.cc
+*.cpp
+*.swift
+*.pch
+*.xcodeproj/
+*.xcworkspace/
+*.dSYM/
+*.bcsymbolmap
