@@ -23,3 +23,15 @@ import YFAdsSDK
 XCFramework 位于 `release/YFAdsSDK/YFAdsSDK.xcframework`。发布副本已移除内部 `PrivateHeaders`，SDK 二进制保持不变。
 
 许可证见 [LICENSE](LICENSE)。
+
+## 2026-11-25 构建更新
+
+`6.1.5.0` 已按当前源码重新归档，包含 11 月开屏与插屏关闭遮罩等修复。SDK 二进制及 `6.1.5.0` tag 已替换为最新构建，名称和版本号保持不变。
+
+已有该版本缓存的项目需要重新下载，清理 `YFLTAdsSDK` 缓存并重新安装依赖后再构建。新项目按上面的 Podfile 正常安装即可。
+
+```sh
+pod cache clean YFLTAdsSDK --all
+```
+
+若项目的 `Pods` 中已有旧包，还需移除已安装的旧 SDK 后重新运行 `pod install --repo-update`。

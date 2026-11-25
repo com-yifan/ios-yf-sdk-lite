@@ -96,6 +96,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGSize)getNewCountCloseSizeByType:(NSInteger)type;
 // 设置跳过倒计时按钮
 + (CGSize)getJumpSizeByType:(YFSplashState)type;
++ (UIFont *)getJumpFontByType:(YFSplashState)type;
 
 // 设置可点区域
 + (UIView *)setHotAreaView:(UIView *)superView containerSize:(CGSize)size type:(NSInteger)type;
